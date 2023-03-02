@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Works.css";
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
+import Fortify from "../../img/fortify.jpg";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
@@ -24,15 +24,12 @@ const Works = () => {
             Works for All these
           </span>
           <span>Brands & Clients</span>
-          <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+          <spane style={{fontSize:"18px"}}>
+          As a MERN stack developer, I have had the opportunity to work on a range <br />
+          of exciting projects that have honed my skills in full-stack development.<br/>
+           In my previous experience, I worked as a web developer at XYZ Company, 
+           <br />where I was responsible for developing and maintaining a web application 
+           <br />using the MERN stack.
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -57,10 +54,10 @@ const Works = () => {
             <img src={Upwork} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Fortify} alt="" style={{borderRadius:"50%",border: "10px solid #ebebeb"}}/>
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Fiverr} alt="" />
           </div>{" "}
           <div className="w-secCircle">
             <img src={Shopify} alt="" />

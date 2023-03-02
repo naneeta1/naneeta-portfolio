@@ -25,9 +25,7 @@
   font-weight: 400;
 }
 
-.n-list {
-  flex: 10;
-}
+
 .n-list > ul {
   display: flex;
   gap: 2rem;
@@ -35,8 +33,36 @@
 }
 
 .n-list > ul :hover {
-  color: var(--orange);
+  color: white;
   cursor: pointer;
+  background: var(--orange);
+  padding: 5px 5px ;
+  border-radius: 30px;
+  border-bottom: 2px solid black;
+  transition: all 0.3s ease-in-out;
+}
+.n-list ul li LINK{
+  list-style: none;
+  display: inline-block;
+  padding: 5px 5px ;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+  z-index: 2;
+}
+.n-list ul li LINK::after{
+  content: '';
+  background: #f44566;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
 }
 
 .n-button {

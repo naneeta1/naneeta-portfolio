@@ -10,12 +10,28 @@
     position: relative;
 }
 .t-heading{
-    align-self: start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .t-heading>*{
     font-size: 2rem;
     font-weight: bold;
 }
+.t-heading span:nth-of-type(1) {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+.t-heading span:nth-of-type(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 35px;
+  }
+
 .t-heading span:nth-of-type(2){
     color: var(--orange);
 }
@@ -43,9 +59,9 @@
     border-radius: 20px;
 }
 .testimonial>img{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 100%;
+    width: 18rem;
+    height: 9rem;
+    border-radius: 10%;
 }
 .testimonial>span{
     color: var(--gray);
